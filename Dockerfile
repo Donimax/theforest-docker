@@ -2,6 +2,8 @@ FROM donimax/steamcmd:v1.1.0
 
 LABEL maintainer="Donimax"
 
+USER root
+
 ENV WINEPREFIX=/winedata/WINE64 \
     WINEARCH=win64 \
     DISPLAY=:1.0 \
