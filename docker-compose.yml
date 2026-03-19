@@ -1,4 +1,3 @@
-version: "3"
 services:
   the-forest-server-01:
     container_name: the-forest-server-01
@@ -12,6 +11,6 @@ services:
       - 27016:27016/tcp
       - 27016:27016/udp
     volumes:
-      - '/opt/docker/theforest/config:/config'
+      - './config:/config'
     environment:
-      - SERVERSTEAMACCOUNT=bal
+      - SERVERSTEAMACCOUNT=YOUR_TOKEN_HERE
